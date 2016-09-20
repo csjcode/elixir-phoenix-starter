@@ -35,7 +35,17 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 * the keys to the params map will always be strings
 * create Template web\templates\hello\show.html.eex
 * Add this into the template <%= @messenger %>
-*
+
+### Router summary (basic principles, no code in this section)
+
+* Routes which begin with an HTTP verb name expand to a single clause of the match function.
+* Routes which begin with 'resources' expand to 8 clauses of the match function.
+* Resources may restrict the number of match function clauses by using the only: or except: options.
+* Any of these routes may be nested.
+* Any of these routes may be scoped to a given path.
+* Using the as: option in a scope can reduce duplication.
+* Using the helper option for scoped routes eliminates unreachable paths.
+
 
 ### Installing routes
 
