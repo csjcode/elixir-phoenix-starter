@@ -22,4 +22,14 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
 
+### Adding pages
+* Most of the action for this demo is in the web directory.
+* To create a page define a route for it.
+* web/router.ex
+* get "/hello", HelloController, :index
+* Our route specifies that we need a HelloPhoenix.HelloController module with an index/2 action.
+* create web/controllers/hello_controller.ex
+* 
+
+
 ### Installing routes
