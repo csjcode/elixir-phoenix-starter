@@ -29,7 +29,10 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 * get "/hello", HelloController, :index
 * Our route specifies that we need a HelloPhoenix.HelloController module with an index/2 action.
 * create web/controllers/hello_controller.ex
-* 
+* add new view
+* Create web/views/hello_view.ex
+
+
 
 
 ### Installing routes
