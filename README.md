@@ -54,6 +54,9 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 * mix phoenix.routes
 * Let's say we have a read-only posts resource. We could define it like this: resources "/posts", PostController, only: [:index, :show]
 * Running $ mix phoenix.routes shows that we now only have the routes to the index and show actions defined.
+* if we have a comments resource, and we don't want to provide a route to delete one: resources "/comments", CommentController, except: [:delete]
+* 
+
 
 ### Learn more
 
