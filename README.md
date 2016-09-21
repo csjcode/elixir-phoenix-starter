@@ -46,8 +46,13 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 * Using the as: option in a scope can reduce duplication.
 * Using the helper option for scoped routes eliminates unreachable paths.
 
-
 ### Installing routes
+
+* The name you gave your application will appear instead of HelloPhoenix for both the router module and controller name.
+* Phoenix provides a great tool for investigating routes in an application, the mix task phoenix.routes. $ mix phoenix.routes
+* in web/router.ex  - resources "/users", UserController
+* mix phoenix.routes
+* 
 
 ### Learn more
 
