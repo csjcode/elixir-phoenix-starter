@@ -52,7 +52,8 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 * Phoenix provides a great tool for investigating routes in an application, the mix task phoenix.routes. $ mix phoenix.routes
 * in web/router.ex  - resources "/users", UserController
 * mix phoenix.routes
-* 
+* Let's say we have a read-only posts resource. We could define it like this: resources "/posts", PostController, only: [:index, :show]
+* Running $ mix phoenix.routes shows that we now only have the routes to the index and show actions defined.
 
 ### Learn more
 
