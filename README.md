@@ -55,7 +55,11 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 * Let's say we have a read-only posts resource. We could define it like this: resources "/posts", PostController, only: [:index, :show]
 * Running $ mix phoenix.routes shows that we now only have the routes to the index and show actions defined.
 * if we have a comments resource, and we don't want to provide a route to delete one: resources "/comments", CommentController, except: [:delete]
-* 
+* mix phoenix.routes
+* Path helpers are functions which are dynamically defined on the Router.Helpers module for an individual application. For us, that is HelloPhoenix.Router.Helpers.
+* $ iex -S mix
+* ------------------------ at this point having problems with postgres connection
+
 
 
 ### Learn more
